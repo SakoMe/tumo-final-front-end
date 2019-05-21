@@ -1,0 +1,45 @@
+.Header {
+	background-color: #1d1e21;
+	color: #cecece;
+	padding: 20px;
+}
+
+.Form {
+	margin: 20px 0px;
+}
+
+.Loader-container {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.loader .ball {
+	width: 20px;
+	height: 20px;
+	background-color: rgb(63, 84, 151);
+	border-radius: 50%;
+	display: inline-block;
+	animation: bounce 1.5s ease-in-out infinite;
+}
+
+.loader .ball-1 {
+	animation-delay: -0.3s;
+}
+
+.loader .ball-2 {
+	animation-delay: -0.15s;
+}
+
+@keyframes bounce {
+	0%,
+	80%,
+	100% {
+		transform: scale(0);
+	}
+	40% {
+		transform: scale(1);
+	}
+}
